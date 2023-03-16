@@ -1,7 +1,7 @@
 {
   "name": "nx01",
   "version": "1.0.0",
-  "description": "",
+  "description": "Some Random Dude",
   "main": "server.js",
   "engines": {
     "node": "14.*"

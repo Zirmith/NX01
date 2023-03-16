@@ -4,6 +4,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+
 const session = require("express-session");
 const getmac = require("getmac");
 const errorHandler = require("express-error-handler");
@@ -16,7 +17,7 @@ require('dotenv').config()
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = "http://localhost:3000/paradox/v1/oauth2/authorize";
+const REDIRECT_URI = "https://paradox-utilities.onrender.com/paradox/v1/oauth2/authorize";
 
 const api_settings = {
   allow_access_by_default: true,
@@ -27,7 +28,7 @@ const api_settings = {
   api_sources: [
     {
       name: "Paradox",
-      url: "/",
+      url: "https://paradox-utilities.onrender.com/paradox/v1/login",
     },
   ],
 };
